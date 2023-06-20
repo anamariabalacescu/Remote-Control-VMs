@@ -1,0 +1,4 @@
+kali's logins:
+kali     pts/2        192.168.203.45   Tue Jun 20 02:20 - 02:22  (00:01)
+
+wtmp begins Tue Feb 21 05:51:36 2023

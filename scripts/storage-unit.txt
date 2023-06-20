@@ -1,0 +1,4 @@
+kali's storage usage
+               total        used        free      shared  buff/cache   available
+Mem:           1.9Gi       880Mi       277Mi        18Mi       823Mi       929Mi
+Swap:          1.0Gi          0B       1.0Gi

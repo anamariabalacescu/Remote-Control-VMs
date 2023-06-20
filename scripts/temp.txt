@@ -1,0 +1,7 @@
+kali's temperature:
+BAT0-acpi-0
+Adapter: ACPI interface
+in0:          10.00 V  
+
+kali's uptime:
+ 02:20:02 up  2:20,  1 user,  load average: 0.33, 0.12, 0.03

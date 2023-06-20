@@ -1,0 +1,30 @@
+Day 1
+
+- determinare comenzi necesare 
+- cod cript bash pentru gestionarea informatiilor extrase prin ssh (parametru = fisier cu username si ip)
+
+
+yt:
+https://www.youtube.com/watch?v=bDCFsIAun90&ab_channel=IntrustCPA
+https://www.youtube.com/watch?v=gsvS2M5knOw&ab_channel=NetworkChuck
+https://www.youtube.com/watch?v=3QiPPX-KeSc&ab_channel=TechWithTim
+https://www.youtube.com/watch?v=YwWfKitB8aA&ab_channel=NeuralNine
+https://www.youtube.com/watch?v=nmzzeAvQHp8&ab_channel=BekBrace
+https://www.youtube.com/watch?v=_3M7Y0iC7PE&ab_channel=SavvyNik
+
+web:
+https://realpython.com/python-sockets/#multi-connection-server
+
+Day 2:
+
+-modificare script bash sub forma interactiva (meniu)
+-abordare prin retea server-client (multi threading)
+
+yt:
+https://www.youtube.com/watch?v=eArI33EL_FQ&ab_channel=CodeWithTJ
+https://www.youtube.com/watch?v=6a8OimVvTEs&ab_channel=PracticalPythonSolutions-ByPaulMahon
+https://www.youtube.com/watch?v=DYYxLSrJdW8&ab_channel=NeuralNine
+
+web:
+https://www.geeksforgeeks.org/python-os-system-method/
+https://www.paramiko.org/
