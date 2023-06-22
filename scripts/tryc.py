@@ -12,6 +12,11 @@ def send_ssh_key():
 	subprocess.run(["ssh-keygen", "-t", "rsa", "-f", "id_rsa"], capture_output=True)
 	subprocess.run(["ssh-copy-id", "-i", "id_rsa.pub", f"{IP}"])
 
+def get_ip():
+	cmd = "ifconfig | grep -oE '([0-9]+\.){3}[0-9]+' | head -n 1"
+	cmd_output = subprocess.check_output(cmd, shell=True).decode("utf-8").strip()
+	return cmd_output
+
 def main():
 	
 	send_ssh_key()
@@ -23,8 +28,7 @@ def main():
 	print("Done")
 
 	username = subprocess.check_output("whoami").decode().strip()
-	client_ip = socket.gethostbyname(socket.getfqdn())
-	#client_ip = socket.gethostbyname(socket.gethostname())
+	client_ip = get_ip()
 	ssh_public_key = open("id_rsa.pub").read()
 	client_info = f"{username},{client_ip},{ssh_public_key}"
 	client.send(client_info.encode(FORMAT))

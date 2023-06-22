@@ -55,3 +55,28 @@ https://www.fabfile.org/
 https://www.paramiko.org/
 https://schedule.readthedocs.io/en/stable/
 
+Day 4:
+
+- need to make ssh connection without agreeing everytime 
+- on the client VM we go to /etc/ssh/ssh-config and we set StrictHostKeyChecking to no.
+- need to create a menu for the second task (for choosing which action will be done next)
+
+
+yt:
+https://www.youtube.com/watch?v=iM3kjbbKHQU&ab_channel=NeuralNine
+https://www.youtube.com/shorts/SALJUqSo0hM
+https://www.youtube.com/watch?v=2iyx8_elcYg&ab_channel=CodingWithRuss
+https://www.youtube.com/watch?v=G8MYGDf_9ho&ab_channel=CodingWithRuss
+https://www.youtube.com/watch?v=zwMsmBsC1GM&ab_channel=IndianPythonista
+
+web:
+https://levelup.gitconnected.com/how-to-connect-without-password-using-ssh-passwordless-9b8963c828e8
+https://pypi.org/project/simple-term-menu/
+https://zoomadmin.com/HowToInstall/UbuntuPackage/python-mate-menu
+https://stackoverflow.com/questions/64035952/how-to-key-press-detection-on-a-linux-terminal-low-level-style-in-python
+https://docs.python.org/3/howto/curses.html
+https://itsfoss.com/start-stop-restart-services-linux/
+https://phoenixnap.com/kb/ssh-to-connect-to-remote-server-linux-or-windows
+https://www.linode.com/docs/guides/use-paramiko-python-to-ssh-into-a-server/
+https://www.devdungeon.com/content/python-ssh-tutorial
+https://zetcode.com/python/paramiko/
