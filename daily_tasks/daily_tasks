@@ -93,3 +93,8 @@ web:
 https://itslinuxfoss.com/resolve-ssh-permission-denied-publickey-error/
 https://www.programiz.com/python-programming/datetime
 https://www.programiz.com/python-programming/directory
+
+
+Day 6:
+
+- fixed issue #1 storing problem (creating separate folders for each client and storing each command's output in a representative file); working on a different approach for the menu problem.

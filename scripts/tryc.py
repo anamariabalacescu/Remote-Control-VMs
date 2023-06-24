@@ -2,7 +2,7 @@ import socket
 import subprocess
 import os
 
-IP = '192.168.83.45'
+IP = '192.168.1.9'
 PORT = 9090
 ADDR = (IP, PORT)
 SIZE = 1024
