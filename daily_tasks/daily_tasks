@@ -98,3 +98,65 @@ https://www.programiz.com/python-programming/directory
 Day 6:
 
 - fixed issue #1 storing problem (creating separate folders for each client and storing each command's output in a representative file); working on a different approach for the menu problem.
+
+Day 7:
+
+- analysed the code
+- tried to fix the printing error in the terminal before moving to the graphical interface
+
+Day 8:
+
+- created a graphical interface user-friendly
+- re-wrote the code
+- modified the function for users and user log in information
+- checked the client's file visudo for specifications reagarding the usage of sudo by our client and set it to nopassword required.
+
+web:
+https://www.plus2net.com/python/tkinter-colors.php
+https://coderslegacy.com/python/list-of-tkinter-widgets/
+https://stackoverflow.com/questions/62601761/how-to-style-and-customize-tkinter-guizero-menu-bar
+https://www.pythontutorial.net/tkinter/tkinter-combobox/
+https://www.tutorialspoint.com/python/tk_menu.htm
+https://www.tutorialspoint.com/python/python_gui_programming.htm
+https://datagod.hashnode.dev/creating-a-text-based-user-interface-with-python-and-curses
+https://realpython.com/pysimplegui-python/
+https://coderslegacy.com/python/create-submenu-in-tkinter/
+https://stackoverflow.com/questions/65633817/creating-sub-menus-inside-sub-menu-in-tkinter
+https://www.geeksforgeeks.org/python-tkinter-toplevel-widget/
+https://www.cyberciti.biz/faq/linux-unix-running-sudo-command-without-a-password/
+https://itslinuxfoss.com/run-sudo-command-without-password/
+
+
+Commands-found (Day1-8):
+lshw -short //lista comp hw
+systemctl list-units --type=service --state=running //vizualizare servicii active
+who //lista vm-uri conectate - 1 = curent; 2+ = conectate ssh
+sudo lsof -i :22 | grep "ESTABLISHED" //conexiuni stabilite prin portul 22 (ssh)
+
+
+servicii active:
+	service --status-all | grep -w "\[ + \]" | awk '{print $4}'
+
+servicii inactive:
+	service --status-all | grep -w "\[ - \]" | awk '{print $4}'
+
+systemctl start <service-name>
+systemctl stop <service-name>
+systemctl restart <service-name>
+
+ssh - client used to connect to a remote host
+sshd - server on a remote host which enables a remote connection
+ssh-keygen - generates, manages and converts authentication keys for SSH
+ssh-agent - stores private keys used for public key authentication
+ssh-add - adds private keys to the list allowed by the server
+ssh-keyscan - helps collecting the public SSH host keys from hosts
+sftp - service which provides an SFTP protocol over SSH
+scp - client which copies files between hosts on a network
+
+
+
+ps -el 
+top -b -n 1 | sed '1,7d' | grep " R " | rev | cut -d ' ' -f1 | rev  --procese active
+
+
+uname -a //gasim distributia cu grep si alegem functia
