@@ -126,6 +126,18 @@ https://www.geeksforgeeks.org/python-tkinter-toplevel-widget/
 https://www.cyberciti.biz/faq/linux-unix-running-sudo-command-without-a-password/
 https://itslinuxfoss.com/run-sudo-command-without-password/
 
+Day 9:
+
+- fix bugs in the graphical interface
+- fix bugs in command execution
+- add file and command for ssh history in the monitoring section
+- corelate remaning functions for the management section
+
+web:
+https://www.geeksforgeeks.org/click-button-by-text-using-python-and-selenium/
+https://www.geeksforgeeks.org/getting-value-after-button-click-with-beautifulsoup/
+https://stackoverflow.com/questions/26776070/how-to-customize-a-folders-icon-via-python
+https://www.freecodecamp.org/news/scp-linux-command-example-how-to-ssh-file-transfer-from-remote-to-local/
 
 Commands-found (Day1-8):
 lshw -short //lista comp hw
