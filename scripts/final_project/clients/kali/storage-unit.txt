@@ -1,0 +1,5 @@
+Data: 2023-06-29 20:44:23.974447
+kali's info:
+total        used        free      shared  buff/cache   available
+Mem:           1.9Gi       1.3Gi        75Mi        43Mi       590Mi       468Mi
+Swap:          1.0Gi       430Mi       593Mi

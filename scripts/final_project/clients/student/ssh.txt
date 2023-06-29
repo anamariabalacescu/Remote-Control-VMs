@@ -1,0 +1,334 @@
+Data: 2023-06-29 08:47:13.580299
+student's info:
+mai 25 13:20:50 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+mai 25 13:20:50 student-VirtualBox sshd[33677]: Server listening on 0.0.0.0 port 22.
+mai 25 13:20:50 student-VirtualBox sshd[33677]: Server listening on :: port 22.
+mai 25 13:20:50 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+mai 25 13:22:21 student-VirtualBox sshd[34051]: Accepted password for student from 192.168.70.42 port 50611 ssh2
+mai 25 13:22:21 student-VirtualBox sshd[34051]: pam_unix(sshd:session): session opened for user student(uid=1000) by (uid=0)
+-- Boot ce8c617e9e2246919fedd2b27bb1f80d --
+mai 26 12:14:33 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+mai 26 12:14:33 student-VirtualBox sshd[903]: Server listening on 0.0.0.0 port 22.
+mai 26 12:14:33 student-VirtualBox sshd[903]: Server listening on :: port 22.
+mai 26 12:14:33 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+-- Boot 916396f7d9064978bd6d331853877c78 --
+iun 01 13:56:57 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 01 13:56:58 student-VirtualBox sshd[896]: Server listening on 0.0.0.0 port 22.
+iun 01 13:56:58 student-VirtualBox sshd[896]: Server listening on :: port 22.
+iun 01 13:56:58 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+-- Boot 3346b534f3f1496cae1a9e3cab29eb8a --
+iun 02 17:23:31 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 02 17:23:32 student-VirtualBox sshd[892]: Server listening on 0.0.0.0 port 22.
+iun 02 17:23:32 student-VirtualBox sshd[892]: Server listening on :: port 22.
+iun 02 17:23:32 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+-- Boot 3b9e3a0895194a49b3d29593ad7153f7 --
+iun 04 13:35:07 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 04 13:35:07 student-VirtualBox sshd[893]: Server listening on 0.0.0.0 port 22.
+iun 04 13:35:07 student-VirtualBox sshd[893]: Server listening on :: port 22.
+iun 04 13:35:07 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+-- Boot 54d72045998d46008c524e06eca7a7b2 --
+iun 04 17:55:58 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 04 17:55:58 student-VirtualBox sshd[894]: Server listening on 0.0.0.0 port 22.
+iun 04 17:55:58 student-VirtualBox sshd[894]: Server listening on :: port 22.
+iun 04 17:55:58 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+-- Boot 876054c7d04349c388fca5025f68bdaf --
+iun 04 20:22:26 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 04 20:22:26 student-VirtualBox sshd[894]: Server listening on 0.0.0.0 port 22.
+iun 04 20:22:26 student-VirtualBox sshd[894]: Server listening on :: port 22.
+iun 04 20:22:26 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+-- Boot 0cef7d546139404bbbb2ec918a1b7a9a --
+iun 05 10:38:26 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 05 10:38:27 student-VirtualBox sshd[896]: Server listening on 0.0.0.0 port 22.
+iun 05 10:38:27 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+iun 05 10:38:27 student-VirtualBox sshd[896]: Server listening on :: port 22.
+-- Boot 95100a91416143619958886e6ee588a6 --
+iun 05 10:53:14 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 05 10:53:14 student-VirtualBox sshd[899]: Server listening on 0.0.0.0 port 22.
+iun 05 10:53:14 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+iun 05 10:53:14 student-VirtualBox sshd[899]: Server listening on :: port 22.
+-- Boot b22d94314676420eb866c226501dcf61 --
+iun 05 14:36:30 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 05 14:36:31 student-VirtualBox sshd[894]: Server listening on 0.0.0.0 port 22.
+iun 05 14:36:31 student-VirtualBox sshd[894]: Server listening on :: port 22.
+iun 05 14:36:31 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+-- Boot 7b5afa3b7a354eb4a7b233d5eccb0759 --
+iun 06 08:15:01 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 06 08:15:01 student-VirtualBox sshd[888]: Server listening on 0.0.0.0 port 22.
+iun 06 08:15:01 student-VirtualBox sshd[888]: Server listening on :: port 22.
+iun 06 08:15:01 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+-- Boot 8d391a9a712a4b64bab381ec802277c5 --
+iun 06 14:05:45 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 06 14:05:45 student-VirtualBox sshd[888]: Server listening on 0.0.0.0 port 22.
+iun 06 14:05:45 student-VirtualBox sshd[888]: Server listening on :: port 22.
+iun 06 14:05:45 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+-- Boot c7e3360aa6d648e5995a1a2d1ac58a86 --
+iun 06 15:45:19 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 06 15:45:20 student-VirtualBox sshd[893]: Server listening on 0.0.0.0 port 22.
+iun 06 15:45:20 student-VirtualBox sshd[893]: Server listening on :: port 22.
+iun 06 15:45:20 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+-- Boot 89eb6fb4b18741acb8dd8320e5718d23 --
+iun 06 23:03:03 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 06 23:03:04 student-VirtualBox sshd[895]: Server listening on 0.0.0.0 port 22.
+iun 06 23:03:04 student-VirtualBox sshd[895]: Server listening on :: port 22.
+iun 06 23:03:04 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+-- Boot a77147457e97485096ba832967b45441 --
+iun 07 11:14:15 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 07 11:14:15 student-VirtualBox sshd[883]: Server listening on 0.0.0.0 port 22.
+iun 07 11:14:15 student-VirtualBox sshd[883]: Server listening on :: port 22.
+iun 07 11:14:15 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+-- Boot efeb13956426483faa5aaed65b0446e8 --
+iun 19 08:31:12 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 19 08:31:12 student-VirtualBox sshd[893]: Server listening on 0.0.0.0 port 22.
+iun 19 08:31:12 student-VirtualBox sshd[893]: Server listening on :: port 22.
+iun 19 08:31:12 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+-- Boot ff65d850d7494e6c893d403d006d1ad6 --
+iun 19 10:34:33 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 19 10:34:34 student-VirtualBox sshd[889]: Server listening on 0.0.0.0 port 22.
+iun 19 10:34:34 student-VirtualBox sshd[889]: Server listening on :: port 22.
+iun 19 10:34:34 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+-- Boot b3953dc16cb94dfba008f5e240414d28 --
+iun 19 10:43:55 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 19 10:43:55 student-VirtualBox sshd[890]: Server listening on 0.0.0.0 port 22.
+iun 19 10:43:55 student-VirtualBox sshd[890]: Server listening on :: port 22.
+iun 19 10:43:55 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+-- Boot e50e5e80dad04fd0847d93655ed6262e --
+iun 20 08:54:41 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 20 08:54:42 student-VirtualBox sshd[901]: Server listening on 0.0.0.0 port 22.
+iun 20 08:54:42 student-VirtualBox sshd[901]: Server listening on :: port 22.
+iun 20 08:54:42 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+-- Boot 693d3f3a487245a89fe6b5674f3cc445 --
+iun 20 09:55:26 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 20 09:55:27 student-VirtualBox sshd[884]: Server listening on 0.0.0.0 port 22.
+iun 20 09:55:27 student-VirtualBox sshd[884]: Server listening on :: port 22.
+iun 20 09:55:27 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+-- Boot 33c70787639245f495f2b991f6a3923b --
+iun 20 10:15:53 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 20 10:15:54 student-VirtualBox sshd[882]: Server listening on 0.0.0.0 port 22.
+iun 20 10:15:54 student-VirtualBox sshd[882]: Server listening on :: port 22.
+iun 20 10:15:54 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+-- Boot ba1e988502054db38f4f12d244bb9aec --
+iun 20 11:05:29 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 20 11:05:30 student-VirtualBox sshd[890]: Server listening on 0.0.0.0 port 22.
+iun 20 11:05:30 student-VirtualBox sshd[890]: Server listening on :: port 22.
+iun 20 11:05:30 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+iun 20 11:37:15 student-VirtualBox sshd[890]: Received signal 15; terminating.
+iun 20 11:37:15 student-VirtualBox systemd[1]: Stopping OpenBSD Secure Shell server...
+iun 20 11:37:15 student-VirtualBox systemd[1]: ssh.service: Deactivated successfully.
+iun 20 11:37:15 student-VirtualBox systemd[1]: Stopped OpenBSD Secure Shell server.
+-- Boot 542438168a434597a9d9454d92ecf23f --
+iun 20 12:15:23 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 20 12:15:23 student-VirtualBox sshd[881]: Server listening on 0.0.0.0 port 22.
+iun 20 12:15:23 student-VirtualBox sshd[881]: Server listening on :: port 22.
+iun 20 12:15:23 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+iun 20 13:48:04 student-VirtualBox sshd[881]: Received signal 15; terminating.
+iun 20 13:48:04 student-VirtualBox systemd[1]: Stopping OpenBSD Secure Shell server...
+iun 20 13:48:04 student-VirtualBox systemd[1]: ssh.service: Deactivated successfully.
+iun 20 13:48:04 student-VirtualBox systemd[1]: Stopped OpenBSD Secure Shell server.
+-- Boot 98ce88c9a37245459cef3dcedf3761a2 --
+iun 20 22:18:37 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 20 22:18:37 student-VirtualBox sshd[885]: Server listening on 0.0.0.0 port 22.
+iun 20 22:18:37 student-VirtualBox sshd[885]: Server listening on :: port 22.
+iun 20 22:18:37 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+iun 20 22:33:34 student-VirtualBox systemd[1]: Stopping OpenBSD Secure Shell server...
+iun 20 22:33:34 student-VirtualBox sshd[885]: Received signal 15; terminating.
+iun 20 22:33:34 student-VirtualBox systemd[1]: ssh.service: Deactivated successfully.
+iun 20 22:33:34 student-VirtualBox systemd[1]: Stopped OpenBSD Secure Shell server.
+-- Boot ddd38e3bb53b4516ad00a3fd261b54ac --
+iun 20 22:34:05 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 20 22:34:05 student-VirtualBox sshd[882]: Server listening on 0.0.0.0 port 22.
+iun 20 22:34:05 student-VirtualBox sshd[882]: Server listening on :: port 22.
+iun 20 22:34:05 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+iun 20 22:34:47 student-VirtualBox sshd[882]: Received signal 15; terminating.
+iun 20 22:34:47 student-VirtualBox systemd[1]: Stopping OpenBSD Secure Shell server...
+iun 20 22:34:47 student-VirtualBox systemd[1]: ssh.service: Deactivated successfully.
+iun 20 22:34:47 student-VirtualBox systemd[1]: Stopped OpenBSD Secure Shell server.
+-- Boot 7a0e1cf3769848c3bcd08660352b57a6 --
+iun 21 09:16:44 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 21 09:16:45 student-VirtualBox sshd[888]: Server listening on 0.0.0.0 port 22.
+iun 21 09:16:45 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+iun 21 09:16:45 student-VirtualBox sshd[888]: Server listening on :: port 22.
+-- Boot 852cc3bff2f04613acc3033c28fdbcfc --
+iun 21 11:33:07 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 21 11:33:07 student-VirtualBox sshd[883]: Server listening on 0.0.0.0 port 22.
+iun 21 11:33:07 student-VirtualBox sshd[883]: Server listening on :: port 22.
+iun 21 11:33:07 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+iun 21 13:35:50 student-VirtualBox sshd[883]: Received signal 15; terminating.
+iun 21 13:35:50 student-VirtualBox systemd[1]: Stopping OpenBSD Secure Shell server...
+iun 21 13:35:51 student-VirtualBox systemd[1]: ssh.service: Deactivated successfully.
+iun 21 13:35:51 student-VirtualBox systemd[1]: Stopped OpenBSD Secure Shell server.
+-- Boot fd9764194f924849be46f443daad9f08 --
+iun 22 08:37:39 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 22 08:37:40 student-VirtualBox sshd[897]: Server listening on 0.0.0.0 port 22.
+iun 22 08:37:40 student-VirtualBox sshd[897]: Server listening on :: port 22.
+iun 22 08:37:40 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+-- Boot 6db8ab2a68de4cf6adb8cf5ee3101e68 --
+iun 22 10:17:46 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 22 10:17:47 student-VirtualBox sshd[885]: Server listening on 0.0.0.0 port 22.
+iun 22 10:17:47 student-VirtualBox sshd[885]: Server listening on :: port 22.
+iun 22 10:17:47 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+iun 22 17:13:27 student-VirtualBox sshd[885]: Received signal 15; terminating.
+iun 22 17:13:27 student-VirtualBox systemd[1]: Stopping OpenBSD Secure Shell server...
+iun 22 17:13:27 student-VirtualBox systemd[1]: ssh.service: Deactivated successfully.
+iun 22 17:13:27 student-VirtualBox systemd[1]: Stopped OpenBSD Secure Shell server.
+-- Boot c7bfbce2aef544b7b1f3f44e526dc46d --
+iun 23 09:23:18 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 23 09:23:19 student-VirtualBox sshd[884]: Server listening on 0.0.0.0 port 22.
+iun 23 09:23:19 student-VirtualBox sshd[884]: Server listening on :: port 22.
+iun 23 09:23:19 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+-- Boot a9cc0dfa39e0429ab2da7a35c2ba6bb1 --
+iun 23 11:36:00 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 23 11:36:01 student-VirtualBox sshd[892]: Server listening on 0.0.0.0 port 22.
+iun 23 11:36:01 student-VirtualBox sshd[892]: Server listening on :: port 22.
+iun 23 11:36:01 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+-- Boot a2209964a8324a3fb87fb3db2ca4886d --
+iun 25 20:20:15 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 25 20:20:15 student-VirtualBox sshd[960]: Server listening on 0.0.0.0 port 22.
+iun 25 20:20:15 student-VirtualBox sshd[960]: Server listening on :: port 22.
+iun 25 20:20:15 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+iun 25 21:13:25 student-VirtualBox sshd[960]: Received signal 15; terminating.
+iun 25 21:13:25 student-VirtualBox systemd[1]: Stopping OpenBSD Secure Shell server...
+iun 25 21:13:25 student-VirtualBox systemd[1]: ssh.service: Deactivated successfully.
+iun 25 21:13:25 student-VirtualBox systemd[1]: Stopped OpenBSD Secure Shell server.
+-- Boot 63f16b6c078a4ce0aeec300088cc4c98 --
+iun 26 08:21:01 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 26 08:21:01 student-VirtualBox sshd[964]: Server listening on 0.0.0.0 port 22.
+iun 26 08:21:01 student-VirtualBox sshd[964]: Server listening on :: port 22.
+iun 26 08:21:01 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+iun 26 13:51:52 student-VirtualBox systemd[1]: Stopping OpenBSD Secure Shell server...
+iun 26 13:51:52 student-VirtualBox systemd[1]: ssh.service: Deactivated successfully.
+iun 26 13:51:52 student-VirtualBox systemd[1]: Stopped OpenBSD Secure Shell server.
+-- Boot dee7f60d8ec54a77a4665e7aedbc7e4e --
+iun 27 08:09:38 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 27 08:09:38 student-VirtualBox sshd[966]: Server listening on 0.0.0.0 port 22.
+iun 27 08:09:38 student-VirtualBox sshd[966]: Server listening on :: port 22.
+iun 27 08:09:38 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+-- Boot f8274c88e38048349481a421ee6d2b97 --
+iun 28 12:31:02 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 28 12:31:02 student-VirtualBox sshd[953]: Server listening on 0.0.0.0 port 22.
+iun 28 12:31:02 student-VirtualBox sshd[953]: Server listening on :: port 22.
+iun 28 12:31:02 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+iun 28 13:20:07 student-VirtualBox sshd[953]: Received signal 15; terminating.
+iun 28 13:20:07 student-VirtualBox systemd[1]: Stopping OpenBSD Secure Shell server...
+iun 28 13:20:07 student-VirtualBox systemd[1]: ssh.service: Deactivated successfully.
+iun 28 13:20:07 student-VirtualBox systemd[1]: Stopped OpenBSD Secure Shell server.
+-- Boot 01b7830e24f346f3a5a5f09e967e5473 --
+iun 28 19:38:58 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 28 19:38:59 student-VirtualBox sshd[952]: Server listening on 0.0.0.0 port 22.
+iun 28 19:38:59 student-VirtualBox sshd[952]: Server listening on :: port 22.
+iun 28 19:38:59 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+iun 28 19:44:28 student-VirtualBox sshd[952]: Received signal 15; terminating.
+iun 28 19:44:28 student-VirtualBox systemd[1]: Stopping OpenBSD Secure Shell server...
+iun 28 19:44:28 student-VirtualBox systemd[1]: ssh.service: Deactivated successfully.
+iun 28 19:44:28 student-VirtualBox systemd[1]: Stopped OpenBSD Secure Shell server.
+-- Boot b29876c29b524dcebc1e8ac0b6b47e6b --
+iun 29 08:01:25 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 29 08:01:26 student-VirtualBox sshd[969]: Server listening on 0.0.0.0 port 22.
+iun 29 08:01:26 student-VirtualBox sshd[969]: Server listening on :: port 22.
+iun 29 08:01:26 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+iun 29 08:16:16 student-VirtualBox sshd[8468]: Authentication refused: bad ownership or modes for file /home/student/.ssh/authorized_keys
+iun 29 08:16:23 student-VirtualBox sshd[8468]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.0.139  user=student
+iun 29 08:16:25 student-VirtualBox sshd[8468]: Failed password for student from 192.168.0.139 port 39088 ssh2
+iun 29 08:16:37 student-VirtualBox sshd[8468]: Failed password for student from 192.168.0.139 port 39088 ssh2
+iun 29 08:16:48 student-VirtualBox sshd[8468]: Accepted password for student from 192.168.0.139 port 39088 ssh2
+iun 29 08:16:48 student-VirtualBox sshd[8468]: pam_unix(sshd:session): session opened for user student(uid=1000) by (uid=0)
+iun 29 08:16:53 student-VirtualBox sshd[8659]: Authentication refused: bad ownership or modes for file /home/student/.ssh/authorized_keys
+iun 29 08:16:58 student-VirtualBox sshd[8659]: Accepted password for student from 192.168.0.139 port 43150 ssh2
+iun 29 08:16:58 student-VirtualBox sshd[8659]: pam_unix(sshd:session): session opened for user student(uid=1000) by (uid=0)
+iun 29 08:16:59 student-VirtualBox sshd[8659]: pam_unix(sshd:session): session closed for user student
+iun 29 08:17:02 student-VirtualBox sshd[8704]: Authentication refused: bad ownership or modes for file /home/student/.ssh/authorized_keys
+iun 29 08:17:09 student-VirtualBox sshd[8704]: Accepted password for student from 192.168.0.139 port 43372 ssh2
+iun 29 08:17:09 student-VirtualBox sshd[8704]: pam_unix(sshd:session): session opened for user student(uid=1000) by (uid=0)
+iun 29 08:17:10 student-VirtualBox sshd[8704]: pam_unix(sshd:session): session closed for user student
+iun 29 08:17:11 student-VirtualBox sshd[8754]: Authentication refused: bad ownership or modes for file /home/student/.ssh/authorized_keys
+iun 29 08:17:20 student-VirtualBox sshd[8754]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.0.139  user=student
+iun 29 08:17:21 student-VirtualBox sshd[8754]: Failed password for student from 192.168.0.139 port 55074 ssh2
+iun 29 08:17:29 student-VirtualBox sshd[14617]: Authentication refused: bad ownership or modes for file /home/student/.ssh/authorized_keys
+iun 29 08:17:33 student-VirtualBox sshd[8754]: Failed password for student from 192.168.0.139 port 55074 ssh2
+iun 29 08:17:47 student-VirtualBox sshd[8754]: Failed password for student from 192.168.0.139 port 55074 ssh2
+iun 29 08:17:49 student-VirtualBox sshd[8754]: Connection closed by authenticating user student 192.168.0.139 port 55074 [preauth]
+iun 29 08:17:49 student-VirtualBox sshd[8754]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.0.139  user=student
+iun 29 08:17:51 student-VirtualBox sshd[23043]: Authentication refused: bad ownership or modes for file /home/student/.ssh/authorized_keys
+iun 29 08:17:55 student-VirtualBox sshd[14617]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.0.139  user=student
+iun 29 08:17:57 student-VirtualBox sshd[14617]: Failed password for student from 192.168.0.139 port 43764 ssh2
+iun 29 08:18:01 student-VirtualBox sshd[14617]: Failed password for student from 192.168.0.139 port 43764 ssh2
+iun 29 08:18:07 student-VirtualBox sshd[14617]: Failed password for student from 192.168.0.139 port 43764 ssh2
+iun 29 08:18:08 student-VirtualBox sshd[14617]: Connection closed by authenticating user student 192.168.0.139 port 43764 [preauth]
+iun 29 08:18:08 student-VirtualBox sshd[14617]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.0.139  user=student
+iun 29 08:18:09 student-VirtualBox sshd[24449]: Authentication refused: bad ownership or modes for file /home/student/.ssh/authorized_keys
+iun 29 08:18:49 student-VirtualBox sshd[24449]: Connection closed by authenticating user student 192.168.0.139 port 36652 [preauth]
+iun 29 08:18:49 student-VirtualBox sshd[23043]: Connection closed by authenticating user student 192.168.0.139 port 59938 [preauth]
+iun 29 08:23:35 student-VirtualBox sshd[26120]: Authentication refused: bad ownership or modes for file /home/student/.ssh/authorized_keys
+iun 29 08:23:48 student-VirtualBox sshd[26120]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.0.139  user=student
+iun 29 08:23:50 student-VirtualBox sshd[26120]: Failed password for student from 192.168.0.139 port 50806 ssh2
+iun 29 08:23:56 student-VirtualBox sshd[26120]: Accepted password for student from 192.168.0.139 port 50806 ssh2
+iun 29 08:23:56 student-VirtualBox sshd[26120]: pam_unix(sshd:session): session opened for user student(uid=1000) by (uid=0)
+iun 29 08:23:57 student-VirtualBox sshd[26120]: pam_unix(sshd:session): session closed for user student
+iun 29 08:23:58 student-VirtualBox sshd[26232]: Authentication refused: bad ownership or modes for file /home/student/.ssh/authorized_keys
+iun 29 08:24:20 student-VirtualBox sshd[26232]: Connection closed by authenticating user student 192.168.0.139 port 41764 [preauth]
+iun 29 08:27:00 student-VirtualBox sshd[26566]: Authentication refused: bad ownership or modes for file /home/student/.ssh/authorized_keys
+iun 29 08:27:00 student-VirtualBox sshd[26568]: Authentication refused: bad ownership or modes for file /home/student/.ssh/authorized_keys
+iun 29 08:27:18 student-VirtualBox sshd[26566]: Connection closed by authenticating user student 192.168.0.139 port 33796 [preauth]
+iun 29 08:27:18 student-VirtualBox sshd[26568]: Connection closed by authenticating user student 192.168.0.139 port 33810 [preauth]
+iun 29 08:29:05 student-VirtualBox sshd[26734]: Authentication refused: bad ownership or modes for file /home/student/.ssh/authorized_keys
+iun 29 08:31:05 student-VirtualBox sshd[26734]: fatal: Timeout before authentication for 192.168.0.139 port 59454
+iun 29 08:33:25 student-VirtualBox sshd[27116]: Authentication refused: bad ownership or modes for file /home/student/.ssh/authorized_keys
+iun 29 08:34:54 student-VirtualBox sshd[27116]: Accepted password for student from 192.168.0.139 port 43968 ssh2
+iun 29 08:34:54 student-VirtualBox sshd[27116]: pam_unix(sshd:session): session opened for user student(uid=1000) by (uid=0)
+iun 29 08:34:55 student-VirtualBox sshd[27116]: pam_unix(sshd:session): session closed for user student
+iun 29 08:34:56 student-VirtualBox sshd[27232]: Authentication refused: bad ownership or modes for file /home/student/.ssh/authorized_keys
+iun 29 08:35:01 student-VirtualBox sshd[27232]: Accepted password for student from 192.168.0.139 port 50872 ssh2
+iun 29 08:35:01 student-VirtualBox sshd[27232]: pam_unix(sshd:session): session opened for user student(uid=1000) by (uid=0)
+iun 29 08:35:04 student-VirtualBox sshd[27288]: Authentication refused: bad ownership or modes for file /home/student/.ssh/authorized_keys
+iun 29 08:35:18 student-VirtualBox sshd[27322]: Authentication refused: bad ownership or modes for file /home/student/.ssh/authorized_keys
+iun 29 08:35:22 student-VirtualBox sshd[27322]: Accepted password for student from 192.168.0.139 port 49878 ssh2
+iun 29 08:35:22 student-VirtualBox sshd[27322]: pam_unix(sshd:session): session opened for user student(uid=1000) by (uid=0)
+iun 29 08:36:15 student-VirtualBox sshd[27537]: Authentication refused: bad ownership or modes for file /home/student/.ssh/authorized_keys
+iun 29 08:36:19 student-VirtualBox sshd[27537]: Accepted password for student from 192.168.0.139 port 55066 ssh2
+iun 29 08:36:19 student-VirtualBox sshd[27537]: pam_unix(sshd:session): session opened for user student(uid=1000) by (uid=0)
+iun 29 08:36:19 student-VirtualBox sshd[27537]: pam_unix(sshd:session): session closed for user student
+iun 29 08:36:44 student-VirtualBox sshd[27288]: Accepted password for student from 192.168.0.139 port 50886 ssh2
+iun 29 08:36:44 student-VirtualBox sshd[27288]: pam_unix(sshd:session): session opened for user student(uid=1000) by (uid=0)
+iun 29 08:36:50 student-VirtualBox sshd[27684]: Authentication refused: bad ownership or modes for file /home/student/.ssh/authorized_keys
+iun 29 08:37:44 student-VirtualBox systemd[1]: Stopping OpenBSD Secure Shell server...
+iun 29 08:37:44 student-VirtualBox sshd[969]: Received signal 15; terminating.
+iun 29 08:37:44 student-VirtualBox systemd[1]: ssh.service: Deactivated successfully.
+iun 29 08:37:44 student-VirtualBox systemd[1]: ssh.service: Unit process 27684 (sshd) remains running after unit stopped.
+iun 29 08:37:44 student-VirtualBox systemd[1]: ssh.service: Unit process 27685 (sshd) remains running after unit stopped.
+iun 29 08:37:44 student-VirtualBox systemd[1]: Stopped OpenBSD Secure Shell server.
+iun 29 08:37:44 student-VirtualBox systemd[1]: ssh.service: Consumed 1.775s CPU time.
+iun 29 08:37:44 student-VirtualBox systemd[1]: ssh.service: Found left-over process 27684 (sshd) in control group while starting unit. Ignoring.
+iun 29 08:37:44 student-VirtualBox systemd[1]: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+iun 29 08:37:44 student-VirtualBox systemd[1]: ssh.service: Found left-over process 27685 (sshd) in control group while starting unit. Ignoring.
+iun 29 08:37:44 student-VirtualBox systemd[1]: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+iun 29 08:37:44 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 29 08:37:44 student-VirtualBox systemd[1]: ssh.service: Found left-over process 27684 (sshd) in control group while starting unit. Ignoring.
+iun 29 08:37:44 student-VirtualBox systemd[1]: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+iun 29 08:37:44 student-VirtualBox systemd[1]: ssh.service: Found left-over process 27685 (sshd) in control group while starting unit. Ignoring.
+iun 29 08:37:44 student-VirtualBox systemd[1]: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+iun 29 08:37:44 student-VirtualBox sshd[27730]: Server listening on 0.0.0.0 port 22.
+iun 29 08:37:44 student-VirtualBox sshd[27730]: Server listening on :: port 22.
+iun 29 08:37:44 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+iun 29 08:37:56 student-VirtualBox sshd[27757]: Authentication refused: bad ownership or modes for file /home/student/.ssh/authorized_keys
+iun 29 08:37:56 student-VirtualBox sshd[27757]: Connection closed by authenticating user student 192.168.0.139 port 53258 [preauth]
+iun 29 08:38:46 student-VirtualBox sshd[27684]: fatal: Timeout before authentication for 192.168.0.139 port 46082
+iun 29 08:44:38 student-VirtualBox systemd[1]: Stopping OpenBSD Secure Shell server...
+iun 29 08:44:38 student-VirtualBox systemd[1]: ssh.service: Deactivated successfully.
+iun 29 08:44:38 student-VirtualBox systemd[1]: Stopped OpenBSD Secure Shell server.
+iun 29 08:44:38 student-VirtualBox systemd[1]: Starting OpenBSD Secure Shell server...
+iun 29 08:44:38 student-VirtualBox sshd[28037]: Server listening on 0.0.0.0 port 22.
+iun 29 08:44:38 student-VirtualBox sshd[28037]: Server listening on :: port 22.
+iun 29 08:44:38 student-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+iun 29 08:44:51 student-VirtualBox sshd[28052]: Accepted publickey for student from 192.168.0.139 port 51898 ssh2: RSA SHA256:EOPeFaRq7fZIgyzbY7UQhnHq/NDpRDFSXmc0wCmCJK8
+iun 29 08:44:51 student-VirtualBox sshd[28052]: pam_unix(sshd:session): session opened for user student(uid=1000) by (uid=0)
+iun 29 08:44:52 student-VirtualBox sshd[28052]: pam_unix(sshd:session): session closed for user student
+iun 29 08:47:10 student-VirtualBox sshd[29455]: Accepted publickey for student from 192.168.0.139 port 57694 ssh2: RSA SHA256:EOPeFaRq7fZIgyzbY7UQhnHq/NDpRDFSXmc0wCmCJK8
+iun 29 08:47:10 student-VirtualBox sshd[29455]: pam_unix(sshd:session): session opened for user student(uid=1000) by (uid=0)
+iun 29 08:47:11 student-VirtualBox sshd[29455]: pam_unix(sshd:session): session closed for user student
+iun 29 08:47:11 student-VirtualBox sshd[29501]: Accepted publickey for student from 192.168.0.139 port 57698 ssh2: RSA SHA256:EOPeFaRq7fZIgyzbY7UQhnHq/NDpRDFSXmc0wCmCJK8
+iun 29 08:47:11 student-VirtualBox sshd[29501]: pam_unix(sshd:session): session opened for user student(uid=1000) by (uid=0)
+iun 29 08:47:12 student-VirtualBox sshd[29501]: pam_unix(sshd:session): session closed for user student
+iun 29 08:47:12 student-VirtualBox sshd[29582]: Accepted publickey for student from 192.168.0.139 port 57706 ssh2: RSA SHA256:EOPeFaRq7fZIgyzbY7UQhnHq/NDpRDFSXmc0wCmCJK8
+iun 29 08:47:12 student-VirtualBox sshd[29582]: pam_unix(sshd:session): session opened for user student(uid=1000) by (uid=0)
+iun 29 08:47:12 student-VirtualBox sshd[29582]: pam_unix(sshd:session): session closed for user student
+iun 29 08:47:13 student-VirtualBox sshd[29621]: Accepted publickey for student from 192.168.0.139 port 57716 ssh2: RSA SHA256:EOPeFaRq7fZIgyzbY7UQhnHq/NDpRDFSXmc0wCmCJK8
+iun 29 08:47:13 student-VirtualBox sshd[29621]: pam_unix(sshd:session): session opened for user student(uid=1000) by (uid=0)

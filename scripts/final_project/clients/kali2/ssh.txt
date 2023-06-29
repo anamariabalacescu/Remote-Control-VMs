@@ -1,0 +1,6 @@
+Data: 2023-06-29 20:48:08.729064
+kali2's info:
+Hint: You are currently not seeing messages from other users and the system.
+      Users in groups 'adm', 'systemd-journal' can see all messages.
+      Pass -q to turn off this notice.
+-- No entries --

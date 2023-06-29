@@ -1,0 +1,22 @@
+Data: 2023-06-29 20:44:26.598888
+kali's info:
+Mar 27 02:30:26 kali su[13682]: pam_unix(su:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/1 ruser=kali rhost=  user=root
+Mar 27 03:15:35 kali su[26864]: pam_unix(su:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/5 ruser=kali rhost=  user=root
+Apr 10 02:55:18 kali lightdm[11550]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:1 ruser= rhost=  user=kali
+May 02 09:16:40 kali su[4405]: pam_unix(su:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/0 ruser=kali rhost=  user=root
+May 02 09:17:03 kali su[4579]: pam_unix(su:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/0 ruser=kali rhost=  user=root
+Jun 19 17:10:48 kali sshd[6735]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.139  user=kali
+Jun 19 17:21:02 kali lightdm[9001]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:1 ruser= rhost=  user=kali
+Jun 21 01:14:58 kali lightdm[972]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=  user=kali
+Jun 22 04:58:24 kali sudo[62853]: pam_unix(sudo:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/2 ruser=kali rhost=  user=kali
+Jun 22 05:49:02 kali sshd[14406]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.83.45
+Jun 22 05:49:18 kali sshd[14406]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.83.45
+Jun 23 02:57:28 kali sudo[35230]: pam_unix(sudo:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/3 ruser=kali rhost=  user=kali
+Jun 27 05:33:45 kali lightdm[36241]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:1 ruser= rhost=  user=kali
+Jun 27 15:46:48 kali su[2163]: pam_unix(su:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/0 ruser=kali rhost=  user=root
+Jun 27 15:46:58 kali su[2213]: pam_unix(su-l:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/0 ruser=kali rhost=  user=root
+Jun 27 15:47:23 kali su[2326]: pam_unix(su:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/0 ruser=kali rhost=  user=root
+Jun 29 12:35:27 kali lightdm[902]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=
+Jun 29 12:35:33 kali lightdm[915]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=
+Jun 29 12:35:36 kali lightdm[917]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=
+Jun 29 12:35:42 kali lightdm[918]: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=

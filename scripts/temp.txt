@@ -1,0 +1,3 @@
+BAT0-acpi-0
+Adapter: ACPI interface
+in0:          10.00 V

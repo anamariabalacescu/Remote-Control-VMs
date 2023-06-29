@@ -1,0 +1,7 @@
+Data: 2023-06-29 20:48:09.801513
+kali2's info:
+Hint: You are currently not seeing messages from other users and the system.
+      Users in groups 'adm', 'systemd-journal' can see all messages.
+      Pass -q to turn off this notice.
+Jun 29 12:52:10 kali sudo[3062]: pam_unix(sudo:auth): authentication failure; logname= uid=1001 euid=0 tty=/dev/pts/0 ruser=kali2 rhost=  user=kali2
+Jun 29 12:52:19 kali su[3099]: pam_unix(su:auth): authentication failure; logname= uid=1001 euid=0 tty=/dev/pts/0 ruser=kali2 rhost=  user=root

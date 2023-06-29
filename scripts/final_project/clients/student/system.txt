@@ -1,0 +1,14 @@
+Data: 2023-06-29 08:47:17.124332
+student's info:
+student@student-VirtualBox 
+-------------------------- 
+OS: Ubuntu 22.04.2 LTS x86_64 
+Host: VirtualBox 1.2 
+Kernel: 5.19.0-45-generic 
+Uptime: 45 mins 
+Packages: 1973 (dpkg), 13 (snap) 
+Shell: bash 5.1.16 
+Resolution: 1920x945 
+CPU: AMD Ryzen 7 5800H with Radeon Graphics (8) @ 3.193GHz 
+GPU: 00:02.0 VMware SVGA II Adapter 
+Memory: 1837MiB / 7936MiB

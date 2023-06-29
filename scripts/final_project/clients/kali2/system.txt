@@ -1,0 +1,14 @@
+Data: 2023-06-29 20:48:10.198334
+kali2's info:
+kali2@kali 
+---------- 
+OS: Kali GNU/Linux Rolling x86_64 
+Host: VirtualBox 1.2 
+Kernel: 6.0.0-kali3-amd64 
+Uptime: 1 hour, 13 mins 
+Packages: 2965 (dpkg) 
+Shell: bash 5.2.2 
+Resolution: 958x935 
+CPU: 12th Gen Intel i7-12700H (2) @ 2.688GHz 
+GPU: 00:02.0 VMware SVGA II Adapter 
+Memory: 1294MiB / 1981MiB

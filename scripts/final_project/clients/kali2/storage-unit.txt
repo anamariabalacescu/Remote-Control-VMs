@@ -1,0 +1,6 @@
+Data: 2023-06-29 20:48:07.686478
+kali2's info:
+Warning: Permanently added '192.168.1.139' (ED25519) to the list of known hosts.
+               total        used        free      shared  buff/cache   available
+Mem:           1.9Gi       1.2Gi        72Mi        32Mi       654Mi       543Mi
+Swap:          1.0Gi        35Mi       988Mi

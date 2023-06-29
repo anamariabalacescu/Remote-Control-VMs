@@ -1,0 +1,185 @@
+Day 1
+
+- determinare comenzi necesare 
+- cod cript bash pentru gestionarea informatiilor extrase prin ssh (parametru = fisier cu username si ip)
+
+
+yt:
+https://www.youtube.com/watch?v=bDCFsIAun90&ab_channel=IntrustCPA
+https://www.youtube.com/watch?v=gsvS2M5knOw&ab_channel=NetworkChuck
+https://www.youtube.com/watch?v=3QiPPX-KeSc&ab_channel=TechWithTim
+https://www.youtube.com/watch?v=YwWfKitB8aA&ab_channel=NeuralNine
+https://www.youtube.com/watch?v=nmzzeAvQHp8&ab_channel=BekBrace
+https://www.youtube.com/watch?v=_3M7Y0iC7PE&ab_channel=SavvyNik
+
+web:
+https://realpython.com/python-sockets/#multi-connection-server
+
+Day 2:
+
+-modificare script bash sub forma interactiva (meniu)
+-abordare prin retea server-client (multi threading)
+
+yt:
+https://www.youtube.com/watch?v=eArI33EL_FQ&ab_channel=CodeWithTJ
+https://www.youtube.com/watch?v=6a8OimVvTEs&ab_channel=PracticalPythonSolutions-ByPaulMahon
+https://www.youtube.com/watch?v=DYYxLSrJdW8&ab_channel=NeuralNine
+
+web:
+https://www.geeksforgeeks.org/python-os-system-method/
+https://www.paramiko.org/
+
+
+Day 3:
+
+-establish client-server connection with username and client_ip passing through tcp/ip protocol
+-realizing it would be a pain to eneter passwords all the time for each client
+-generating ssh-key to make life easier
+-add function to script to use ssh connection in our advantage and get information.
+
+
+yt:
+https://www.youtube.com/watch?v=ZKZbPZCnHRE&ab_channel=NerdontheStreet
+https://www.youtube.com/watch?v=Py4Gtp8fj1k&ab_channel=Herbertech
+https://www.youtube.com/watch?v=AZnGRKFUU0c&ab_channel=Dave%27sSpace
+https://www.youtube.com/watch?v=Mp6YMt8MSAU&ab_channel=ComputerScienceTutorials
+https://www.youtube.com/watch?v=yDPQfj4bZY8&ab_channel=NeuralNine
+
+web:
+https://www.ibm.com/support/pages/configuring-ssh-login-without-password
+https://realpython.com/intro-to-python-threading/
+https://stackoverflow.com/questions/7168508/background-function-in-python
+https://stackoverflow.com/questions/2957116/how-to-run-multiple-functions-at-the-same-time
+https://wellsr.com/python/python-multithreading-run-functions-in-parallel/
+https://www.fabfile.org/
+https://www.paramiko.org/
+https://schedule.readthedocs.io/en/stable/
+
+Day 4:
+
+- need to make ssh connection without agreeing everytime 
+- on the client VM we go to /etc/ssh/ssh-config and we set StrictHostKeyChecking to no.
+- need to create a menu for the second task (for choosing which action will be done next)
+
+
+yt:
+https://www.youtube.com/watch?v=iM3kjbbKHQU&ab_channel=NeuralNine
+https://www.youtube.com/shorts/SALJUqSo0hM
+https://www.youtube.com/watch?v=2iyx8_elcYg&ab_channel=CodingWithRuss
+https://www.youtube.com/watch?v=G8MYGDf_9ho&ab_channel=CodingWithRuss
+https://www.youtube.com/watch?v=zwMsmBsC1GM&ab_channel=IndianPythonista
+
+web:
+https://levelup.gitconnected.com/how-to-connect-without-password-using-ssh-passwordless-9b8963c828e8
+https://pypi.org/project/simple-term-menu/
+https://zoomadmin.com/HowToInstall/UbuntuPackage/python-mate-menu
+https://stackoverflow.com/questions/64035952/how-to-key-press-detection-on-a-linux-terminal-low-level-style-in-python
+https://docs.python.org/3/howto/curses.html
+https://itsfoss.com/start-stop-restart-services-linux/
+https://phoenixnap.com/kb/ssh-to-connect-to-remote-server-linux-or-windows
+https://www.linode.com/docs/guides/use-paramiko-python-to-ssh-into-a-server/
+https://www.devdungeon.com/content/python-ssh-tutorial
+https://zetcode.com/python/paramiko/
+
+
+Day 5:
+
+- find and solve ssh problem - switching roles between server and client
+
+yt:
+https://www.youtube.com/watch?v=j2vBT3T79Pg&ab_channel=TonyTeachesTech
+
+web:
+https://itslinuxfoss.com/resolve-ssh-permission-denied-publickey-error/
+https://www.programiz.com/python-programming/datetime
+https://www.programiz.com/python-programming/directory
+
+
+Day 6:
+
+- fixed issue #1 storing problem (creating separate folders for each client and storing each command's output in a representative file); working on a different approach for the menu problem.
+
+Day 7:
+
+- analysed the code
+- tried to fix the printing error in the terminal before moving to the graphical interface
+
+Day 8:
+
+- created a graphical interface user-friendly
+- re-wrote the code
+- modified the function for users and user log in information
+- checked the client's file visudo for specifications reagarding the usage of sudo by our client and set it to nopassword required.
+
+web:
+https://www.plus2net.com/python/tkinter-colors.php
+https://coderslegacy.com/python/list-of-tkinter-widgets/
+https://stackoverflow.com/questions/62601761/how-to-style-and-customize-tkinter-guizero-menu-bar
+https://www.pythontutorial.net/tkinter/tkinter-combobox/
+https://www.tutorialspoint.com/python/tk_menu.htm
+https://www.tutorialspoint.com/python/python_gui_programming.htm
+https://datagod.hashnode.dev/creating-a-text-based-user-interface-with-python-and-curses
+https://realpython.com/pysimplegui-python/
+https://coderslegacy.com/python/create-submenu-in-tkinter/
+https://stackoverflow.com/questions/65633817/creating-sub-menus-inside-sub-menu-in-tkinter
+https://www.geeksforgeeks.org/python-tkinter-toplevel-widget/
+https://www.cyberciti.biz/faq/linux-unix-running-sudo-command-without-a-password/
+https://itslinuxfoss.com/run-sudo-command-without-password/
+
+Day 9:
+
+- fix bugs in the graphical interface
+- fix bugs in command execution
+- add file and command for ssh history in the monitoring section
+- corelate remaning functions for the management section
+
+web:
+https://www.geeksforgeeks.org/click-button-by-text-using-python-and-selenium/
+https://www.geeksforgeeks.org/getting-value-after-button-click-with-beautifulsoup/
+https://stackoverflow.com/questions/26776070/how-to-customize-a-folders-icon-via-python
+https://www.freecodecamp.org/news/scp-linux-command-example-how-to-ssh-file-transfer-from-remote-to-local/
+
+Day 10:
+
+- added function for security reasons - failed authentifications into the system.
+- added posibility of choosing clients for management purposes.
+- fixed bugs - directory change and creation.
+- wrote short documentation for basic steps in using the app.
+- did tests on a new distribution created and on another student's virtual machine.
+
+web:
+https://stackoverflow.com/questions/20399243/display-message-when-hovering-over-something-with-mouse-cursor-in-python
+
+Commands-found (Day1-8):
+lshw -short //lista comp hw
+systemctl list-units --type=service --state=running //vizualizare servicii active
+who //lista vm-uri conectate - 1 = curent; 2+ = conectate ssh
+sudo lsof -i :22 | grep "ESTABLISHED" //conexiuni stabilite prin portul 22 (ssh)
+
+
+servicii active:
+	service --status-all | grep -w "\[ + \]" | awk '{print $4}'
+
+servicii inactive:
+	service --status-all | grep -w "\[ - \]" | awk '{print $4}'
+
+systemctl start <service-name>
+systemctl stop <service-name>
+systemctl restart <service-name>
+
+ssh - client used to connect to a remote host
+sshd - server on a remote host which enables a remote connection
+ssh-keygen - generates, manages and converts authentication keys for SSH
+ssh-agent - stores private keys used for public key authentication
+ssh-add - adds private keys to the list allowed by the server
+ssh-keyscan - helps collecting the public SSH host keys from hosts
+sftp - service which provides an SFTP protocol over SSH
+scp - client which copies files between hosts on a network
+
+
+
+ps -el 
+top -b -n 1 | sed '1,7d' | grep " R " | rev | cut -d ' ' -f1 | rev  --procese active
+
+
+uname -a //gasim distributia cu grep si alegem functia

@@ -1,0 +1,230 @@
+Xsession: X session started for kali at Thu Jun 29 01:00:39 AM EDT 2023
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting XAUTHORITY=/home/kali/.Xauthority
+localuser:kali being added to access control list
+dbus-update-activation-environment: setting XDG_DATA_DIRS=/usr/share/xfce4:/usr/local/share/:/usr/share/
+dbus-update-activation-environment: setting GTK_MODULES=gail:atk-bridge
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting POWERSHELL_TELEMETRY_OPTOUT=1
+dbus-update-activation-environment: setting USER=kali
+dbus-update-activation-environment: setting XDG_SESSION_TYPE=x11
+dbus-update-activation-environment: setting DOTNET_CLI_TELEMETRY_OPTOUT=1
+dbus-update-activation-environment: setting HOME=/home/kali
+dbus-update-activation-environment: setting DESKTOP_SESSION=lightdm-xsession
+dbus-update-activation-environment: setting XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+dbus-update-activation-environment: setting GTK_MODULES=gail:atk-bridge
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting COMMAND_NOT_FOUND_INSTALL_PROMPT=1
+dbus-update-activation-environment: setting QT_QPA_PLATFORMTHEME=qt5ct
+dbus-update-activation-environment: setting LOGNAME=kali
+dbus-update-activation-environment: setting QT_AUTO_SCREEN_SCALE_FACTOR=0
+dbus-update-activation-environment: setting XDG_SESSION_CLASS=user
+dbus-update-activation-environment: setting PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games
+dbus-update-activation-environment: setting _JAVA_OPTIONS=-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+dbus-update-activation-environment: setting XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+dbus-update-activation-environment: setting XDG_RUNTIME_DIR=/run/user/1000
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting LANG=en_US.UTF-8
+dbus-update-activation-environment: setting POWERSHELL_UPDATECHECK=Off
+dbus-update-activation-environment: setting XDG_SESSION_DESKTOP=lightdm-xsession
+dbus-update-activation-environment: setting XAUTHORITY=/home/kali/.Xauthority
+dbus-update-activation-environment: setting XDG_GREETER_DATA_DIR=/var/lib/lightdm/data/kali
+dbus-update-activation-environment: setting SHELL=/usr/bin/zsh
+dbus-update-activation-environment: setting GDMSESSION=lightdm-xsession
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/home/kali
+dbus-update-activation-environment: setting XDG_DATA_DIRS=/usr/share/xfce4:/usr/local/share/:/usr/share/
+05:00:40.158018 main     VBoxClient 7.0.6 r155176 (verbosity: 0) linux.amd64 (Jan 11 2023 15:34:34) release log
+05:00:40.158020 main     Log opened 2023-06-29T05:00:40.158015000Z
+05:00:40.158564 main     OS Product: Linux
+05:00:40.158746 main     OS Release: 6.0.0-kali3-amd64
+05:00:40.158983 main     OS Version: #1 SMP PREEMPT_DYNAMIC Debian 6.0.7-1kali1 (2022-11-07)
+05:00:40.159390 main     Executable: /opt/VBoxGuestAdditions-7.0.6/bin/VBoxClient
+05:00:40.159391 main     Process ID: 1050
+05:00:40.159391 main     Package type: LINUX_64BITS_GENERIC
+05:00:40.159947 main      VBoxClient 7.0.6 r155176 started. Verbose level = 0. Wayland environment detected: no
+05:00:40.160442 main      Service: Shared Clipboard
+05:00:40.163056 main     VBoxClient 7.0.6 r155176 (verbosity: 0) linux.amd64 (Jan 11 2023 15:34:34) release log
+05:00:40.163058 main     Log opened 2023-06-29T05:00:40.163053000Z
+05:00:40.163615 main     OS Product: Linux
+05:00:40.163998 main     OS Release: 6.0.0-kali3-amd64
+05:00:40.164220 main     OS Version: #1 SMP PREEMPT_DYNAMIC Debian 6.0.7-1kali1 (2022-11-07)
+05:00:40.164605 main     Executable: /opt/VBoxGuestAdditions-7.0.6/bin/VBoxClient
+05:00:40.164605 main     Process ID: 1054
+05:00:40.164606 main     Package type: LINUX_64BITS_GENERIC
+05:00:40.165116 main      VBoxClient 7.0.6 r155176 started. Verbose level = 0. Wayland environment detected: no
+05:00:40.165585 main      Service: VirtualBox host version check
+05:00:40.170357 main     VBoxClient 7.0.6 r155176 (verbosity: 0) linux.amd64 (Jan 11 2023 15:34:34) release log
+05:00:40.170359 main     Log opened 2023-06-29T05:00:40.170354000Z
+05:00:40.170954 main     OS Product: Linux
+05:00:40.171149 main     OS Release: 6.0.0-kali3-amd64
+05:00:40.171453 main     OS Version: #1 SMP PREEMPT_DYNAMIC Debian 6.0.7-1kali1 (2022-11-07)
+05:00:40.171933 main     Executable: /opt/VBoxGuestAdditions-7.0.6/bin/VBoxClient
+05:00:40.171934 main     Process ID: 1063
+05:00:40.171934 main     Package type: LINUX_64BITS_GENERIC
+05:00:40.172727 main      VBoxClient 7.0.6 r155176 started. Verbose level = 0. Wayland environment detected: no
+05:00:40.173738 main      Service: Seamless Mode Support
+05:00:40.177018 main     VBoxClient 7.0.6 r155176 (verbosity: 0) linux.amd64 (Jan 11 2023 15:34:34) release log
+05:00:40.177022 main     Log opened 2023-06-29T05:00:40.177016000Z
+05:00:40.177710 main     OS Product: Linux
+05:00:40.177879 main     OS Release: 6.0.0-kali3-amd64
+05:00:40.178090 main     OS Version: #1 SMP PREEMPT_DYNAMIC Debian 6.0.7-1kali1 (2022-11-07)
+05:00:40.178436 main     Executable: /opt/VBoxGuestAdditions-7.0.6/bin/VBoxClient
+05:00:40.178437 main     Process ID: 1070
+05:00:40.178437 main     Package type: LINUX_64BITS_GENERIC
+05:00:40.178929 main      VBoxClient 7.0.6 r155176 started. Verbose level = 0. Wayland environment detected: no
+05:00:40.179395 main      Service: Drag'n'Drop
+05:00:40.197042 main     VBoxClient 7.0.6 r155176 (verbosity: 0) linux.amd64 (Jan 11 2023 15:34:34) release log
+05:00:40.197044 main     Log opened 2023-06-29T05:00:40.197039000Z
+05:00:40.197658 main     OS Product: Linux
+05:00:40.197836 main     OS Release: 6.0.0-kali3-amd64
+05:00:40.198051 main     OS Version: #1 SMP PREEMPT_DYNAMIC Debian 6.0.7-1kali1 (2022-11-07)
+05:00:40.198408 main     Executable: /opt/VBoxGuestAdditions-7.0.6/bin/VBoxClient
+05:00:40.198408 main     Process ID: 1077
+05:00:40.198408 main     Package type: LINUX_64BITS_GENERIC
+05:00:40.198907 main      VBoxClient 7.0.6 r155176 started. Verbose level = 0. Wayland environment detected: no
+05:00:40.199327 main      Service: VMSVGA display assistant
+/usr/bin/x-session-manager: X server already running on display :0
+/usr/bin/iceauth:  creating new authority file /run/user/1000/ICEauthority
+xfce4-session-Message: 01:00:40.305: SSH authentication agent is already running
+gpg-agent: a gpg-agent is already running - not starting a new one
+
+(xfwm4:1133): xfwm4-WARNING **: 01:00:40.508: Unsupported GL renderer (llvmpipe (LLVM 15.0.6, 256 bits)).
+
+(wrapper-2.0:1188): Gtk-WARNING **: 01:00:41.043: Negative content width -1 (allocation 1, extents 1x1) while allocating gadget (node button, owner GtkToggleButton)
+
+** (wrapper-2.0:1200): WARNING **: 01:00:41.120: No outputs have backlight property
+
+(wrapper-2.0:1196): Gtk-WARNING **: 01:00:41.153: Negative content width -1 (allocation 1, extents 1x1) while allocating gadget (node button, owner GtkToggleButton)
+
+(wrapper-2.0:1195): Gtk-WARNING **: 01:00:41.180: Negative content width -1 (allocation 1, extents 1x1) while allocating gadget (node button, owner PulseaudioButton)
+
+(wrapper-2.0:1200): Gtk-WARNING **: 01:00:41.295: Negative content width -1 (allocation 1, extents 1x1) while allocating gadget (node button, owner PowerManagerButton)
+
+** (xfce4-power-manager:1268): WARNING **: 01:00:41.309: Failed to get name owner: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Could not get owner of name 'org.xfce.PowerManager': no such name
+
+
+** (xfce4-power-manager:1268): WARNING **: 01:00:41.309: Failed to get name owner: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Could not get owner of name 'org.freedesktop.PowerManagement': no such name
+
+Xfce power manager is not running
+05:00:41.325098 main     VBoxClient 7.0.6 r155176 (verbosity: 0) linux.amd64 (Jan 11 2023 15:34:34) release log
+05:00:41.325100 main     Log opened 2023-06-29T05:00:41.325094000Z
+05:00:41.326151 main     OS Product: Linux
+05:00:41.326463 main     OS Release: 6.0.0-kali3-amd64
+05:00:41.326776 main     OS Version: #1 SMP PREEMPT_DYNAMIC Debian 6.0.7-1kali1 (2022-11-07)
+05:00:41.332623 main     Executable: /opt/VBoxGuestAdditions-7.0.6/bin/VBoxClient
+05:00:41.332627 main     Process ID: 1283
+05:00:41.332628 main     Package type: LINUX_64BITS_GENERIC
+05:00:41.333471 main      VBoxClient 7.0.6 r155176 started. Verbose level = 0. Wayland environment detected: no
+05:00:41.334054 main      Service: Shared Clipboard
+
+(xfce4-power-manager:1268): GLib-GObject-CRITICAL **: 01:00:41.351: ../../../gobject/gsignal.c:2626: signal 'Changed' is invalid for instance '0x5556f6c93de0' of type 'GDBusProxy'
+05:00:41.420335 main     VBoxClient 7.0.6 r155176 (verbosity: 0) linux.amd64 (Jan 11 2023 15:34:34) release log
+05:00:41.420339 main     Log opened 2023-06-29T05:00:41.420331000Z
+05:00:41.421202 main     OS Product: Linux
+05:00:41.421669 main     OS Release: 6.0.0-kali3-amd64
+05:00:41.421975 main     OS Version: #1 SMP PREEMPT_DYNAMIC Debian 6.0.7-1kali1 (2022-11-07)
+05:00:41.423734 main     Executable: /opt/VBoxGuestAdditions-7.0.6/bin/VBoxClient
+05:00:41.423736 main     Process ID: 1295
+05:00:41.423736 main     Package type: LINUX_64BITS_GENERIC
+05:00:41.424440 main      VBoxClient 7.0.6 r155176 started. Verbose level = 0. Wayland environment detected: no
+05:00:41.427793 main      Service: VirtualBox host version check
+05:00:41.481759 main     VBoxClient 7.0.6 r155176 (verbosity: 0) linux.amd64 (Jan 11 2023 15:34:34) release log
+05:00:41.481762 main     Log opened 2023-06-29T05:00:41.481755000Z
+05:00:41.482453 main     OS Product: Linux
+05:00:41.482658 main     OS Release: 6.0.0-kali3-amd64
+05:00:41.482910 main     OS Version: #1 SMP PREEMPT_DYNAMIC Debian 6.0.7-1kali1 (2022-11-07)
+05:00:41.483348 main     Executable: /opt/VBoxGuestAdditions-7.0.6/bin/VBoxClient
+05:00:41.483348 main     Process ID: 1337
+05:00:41.483349 main     Package type: LINUX_64BITS_GENERIC
+05:00:41.483960 main      VBoxClient 7.0.6 r155176 started. Verbose level = 0. Wayland environment detected: no
+05:00:41.484464 main      Service: Seamless Mode Support
+Another notification daemon is running, exiting
+05:00:41.588728 main     VBoxClient 7.0.6 r155176 (verbosity: 0) linux.amd64 (Jan 11 2023 15:34:34) release log
+05:00:41.588731 main     Log opened 2023-06-29T05:00:41.588724000Z
+05:00:41.589454 main     OS Product: Linux
+05:00:41.589694 main     OS Release: 6.0.0-kali3-amd64
+05:00:41.589956 main     OS Version: #1 SMP PREEMPT_DYNAMIC Debian 6.0.7-1kali1 (2022-11-07)
+05:00:41.590406 main     Executable: /opt/VBoxGuestAdditions-7.0.6/bin/VBoxClient
+05:00:41.590406 main     Process ID: 1355
+05:00:41.590406 main     Package type: LINUX_64BITS_GENERIC
+05:00:41.591103 main      VBoxClient 7.0.6 r155176 started. Verbose level = 0. Wayland environment detected: no
+05:00:41.593282 main      Service: Drag'n'Drop
+
+** (xiccd:1290): WARNING **: 01:00:41.653: EDID is empty
+Xfce Power Manager: Another power manager is already running
+05:00:41.766079 main     VBoxClient 7.0.6 r155176 (verbosity: 0) linux.amd64 (Jan 11 2023 15:34:34) release log
+05:00:41.766081 main     Log opened 2023-06-29T05:00:41.766072000Z
+05:00:41.766804 main     OS Product: Linux
+05:00:41.767025 main     OS Release: 6.0.0-kali3-amd64
+05:00:41.767327 main     OS Version: #1 SMP PREEMPT_DYNAMIC Debian 6.0.7-1kali1 (2022-11-07)
+05:00:41.767812 main     Executable: /opt/VBoxGuestAdditions-7.0.6/bin/VBoxClient
+05:00:41.767813 main     Process ID: 1436
+05:00:41.767813 main     Package type: LINUX_64BITS_GENERIC
+05:00:41.768432 main      VBoxClient 7.0.6 r155176 started. Verbose level = 0. Wayland environment detected: no
+05:00:41.769001 main      Service: VMSVGA display assistant
+
+(xfce4-power-manager:1268): xfce4-power-manager-WARNING **: 01:00:41.793: could not map keysym 1008ffa8 to keycode
+
+blueman-applet 01.00.42 WARNING  PluginManager:151 __load_plugin: Not loading PPPSupport because its conflict has higher priority
+
+** (xfce4-power-manager:1268): WARNING **: 01:00:42.260: No outputs have backlight property
+
+(xfce4-power-manager:1268): xfce4-power-manager-WARNING **: 01:00:42.268: Failed to get keyboard max brightness level : GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Object does not exist at path “/org/freedesktop/UPower/KbdBacklight”
+blueman-applet 01.00.42 WARNING  PluginManager:151 __load_plugin: Not loading DhcpClient because its conflict has higher priority
+blueman-applet 01.00.42 WARNING  DiscvManager:119 update_menuitems: warning: Adapter is None
+libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+[1726:0629/010114.823902:ERROR:gpu_memory_buffer_support_x11.cc(44)] dri3 extension not supported.
+[90m[main 2023-06-29T05:01:15.143Z][0m update#ctor - updates are disabled as there is no update URL
+[90m[main 2023-06-29T05:01:16.608Z][0m Starting extension host with pid 1825 (fork() took 5 ms).
+[1726:0629/010119.220229:ERROR:gl_utils.cc(319)] [.WebGL-0x322003ed6900]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[1726:0629/010119.277485:ERROR:gl_utils.cc(319)] [.WebGL-0x322003ed6900]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[1726:0629/010120.068078:ERROR:gl_utils.cc(319)] [.WebGL-0x322003ed6900]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[1726:0629/010120.412499:ERROR:gl_utils.cc(319)] [.WebGL-0x322003ed6900]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)
+
+** (xiccd:1290): WARNING **: 01:02:03.262: EDID is empty
+
+** (xiccd:1290): WARNING **: 01:02:03.270: EDID is empty
+
+** (xiccd:1290): WARNING **: 01:02:13.727: EDID is empty
+
+** (xiccd:1290): WARNING **: 01:02:13.732: EDID is empty
+Using a variable-width font in the terminal.  This may cause performance degradation and display/alignment errors.
+
+** (xiccd:1290): WARNING **: 01:08:45.125: EDID is empty
+
+** (xiccd:1290): WARNING **: 01:08:45.266: EDID is empty
+Using a variable-width font in the terminal.  This may cause performance degradation and display/alignment errors.
+
+** (xiccd:1290): WARNING **: 01:12:44.190: EDID is empty
+
+** (xiccd:1290): WARNING **: 01:12:44.200: EDID is empty
+Undecodable sequence: \001b(hex)[22;0;0t
+Undecodable sequence: \001b(hex)[23;0;0t
+[90m[main 2023-06-29T05:47:43.715Z][0m Waiting for extension host with pid 1825 to exit.
+[90m[main 2023-06-29T05:47:43.719Z][0m Extension host with pid 1825 exited with code: 0, signal: null.
+
+** (xiccd:1290): WARNING **: 01:47:44.649: EDID is empty
+
+** (xiccd:1290): WARNING **: 01:47:44.655: EDID is empty
+libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)
+[14642:0629/014751.315177:ERROR:gpu_memory_buffer_support_x11.cc(44)] dri3 extension not supported.
+[90m[main 2023-06-29T05:47:51.492Z][0m update#ctor - updates are disabled as there is no update URL
+[14674:0629/014751.563390:ERROR:command_buffer_proxy_impl.cc(126)] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.
+[90m[main 2023-06-29T05:47:52.553Z][0m Starting extension host with pid 14711 (fork() took 4 ms).
+[14642:0629/014757.600392:ERROR:gl_utils.cc(319)] [.WebGL-0xe9c032ba200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[14642:0629/014757.642184:ERROR:gl_utils.cc(319)] [.WebGL-0xe9c032ba200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[14642:0629/014757.813830:ERROR:gl_utils.cc(319)] [.WebGL-0xe9c032ba200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[14642:0629/014757.864233:ERROR:gl_utils.cc(319)] [.WebGL-0xe9c032ba200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)
+
+(xfce4-power-manager:1268): Gtk-WARNING **: 02:00:21.442: A floating object was finalized. This means that someone
+called g_object_unref() on an object that had only a floating
+reference; the initial floating reference is not owned by anyone
+and must be removed with g_object_ref_sink().
+
+(wrapper-2.0:1196): GLib-GObject-CRITICAL **: 02:00:21.449: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+[14609:0629/020021.594941:ERROR:network_service_instance_impl.cc(470)] Network service crashed, restarting service.
+[14609:0629/020021.603555:ERROR:zygote_communication_linux.cc(275)] Failed to send GetTerminationStatus message to zygote
+[90m[main 2023-06-29T06:00:21.614Z][0m Extension host with pid 14711 exited with code: null, signal: SIGHUP.

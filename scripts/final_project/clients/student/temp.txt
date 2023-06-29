@@ -1,0 +1,5 @@
+Data: 2023-06-29 08:47:15.214970
+student's info:
+BAT0-acpi-0
+Adapter: ACPI interface
+in0:          10.00 V

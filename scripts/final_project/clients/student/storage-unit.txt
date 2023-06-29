@@ -1,0 +1,5 @@
+Data: 2023-06-29 08:47:10.801211
+student's info:
+total        used        free      shared  buff/cache   available
+Mem:           7,8Gi       1,7Gi       1,4Gi        92Mi       4,6Gi       5,6Gi
+Swap:          2,0Gi          0B       2,0Gi
