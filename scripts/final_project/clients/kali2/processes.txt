@@ -1,4 +1,4 @@
-Data: 2023-06-29 20:48:09.012699
+Data: 2023-06-30 11:19:26.304618
 kali2's info:
 UNIT                           LOAD   ACTIVE SUB     DESCRIPTION
   colord.service                 loaded active running Manage, Install and Generate Color Profiles

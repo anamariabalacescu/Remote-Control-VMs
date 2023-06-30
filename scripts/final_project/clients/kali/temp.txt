@@ -1,4 +1,4 @@
-Data: 2023-06-29 20:44:25.728244
+Data: 2023-06-30 12:42:52.519170
 kali's info:
 BAT0-acpi-0
 Adapter: ACPI interface

@@ -1,6 +1,6 @@
-Data: 2023-06-29 20:48:08.729064
+Data: 2023-06-30 11:19:26.054648
 kali2's info:
+-- No entries --
 Hint: You are currently not seeing messages from other users and the system.
       Users in groups 'adm', 'systemd-journal' can see all messages.
       Pass -q to turn off this notice.
--- No entries --

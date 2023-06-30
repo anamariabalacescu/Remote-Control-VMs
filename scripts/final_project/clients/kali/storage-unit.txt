@@ -1,5 +1,6 @@
-Data: 2023-06-29 20:44:23.974447
+Data: 2023-06-30 12:42:50.839923
 kali's info:
-total        used        free      shared  buff/cache   available
-Mem:           1.9Gi       1.3Gi        75Mi        43Mi       590Mi       468Mi
-Swap:          1.0Gi       430Mi       593Mi
+Warning: Permanently added '192.168.0.94' (ED25519) to the list of known hosts.
+               total        used        free      shared  buff/cache   available
+Mem:           1.9Gi       1.1Gi        80Mi        36Mi       753Mi       638Mi
+Swap:          1.0Gi       385Mi       638Mi

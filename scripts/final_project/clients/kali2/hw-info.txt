@@ -1,4 +1,4 @@
-Data: 2023-06-29 20:48:08.209939
+Data: 2023-06-30 11:19:25.555060
 kali2's info:
 cpu:
                        12th Gen Intel(R) Core(TM) i7-12700H, 2688 MHz
@@ -19,8 +19,8 @@ storage:
 network:
   eth0                 Intel PRO/1000 MT Desktop Adapter
 network interface:
-  eth0                 Ethernet network interface
   lo                   Loopback network interface
+  eth0                 Ethernet network interface
 disk:
   /dev/sda             VBOX HARDDISK
 partition:

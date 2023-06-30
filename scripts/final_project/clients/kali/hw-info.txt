@@ -1,4 +1,4 @@
-Data: 2023-06-29 20:44:24.515552
+Data: 2023-06-30 12:42:51.316687
 kali's info:
 cpu:
                        12th Gen Intel(R) Core(TM) i7-12700H, 2688 MHz

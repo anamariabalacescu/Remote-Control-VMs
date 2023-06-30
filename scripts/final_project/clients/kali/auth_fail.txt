@@ -1,4 +1,4 @@
-Data: 2023-06-29 20:44:26.598888
+Data: 2023-06-30 12:42:53.385168
 kali's info:
 Mar 27 02:30:26 kali su[13682]: pam_unix(su:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/1 ruser=kali rhost=  user=root
 Mar 27 03:15:35 kali su[26864]: pam_unix(su:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/5 ruser=kali rhost=  user=root

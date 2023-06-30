@@ -4,15 +4,16 @@ import threading
 import paramiko
 import os
 from paramiko import SSHConfig
-import curses
+import paramiko
 import datetime
 import time
 import tkinter as tk
 from tkinter import ttk
 from PIL import ImageTk, Image
+from tkinter import scrolledtext
 import re
 
-IP = '192.168.1.135'
+IP = '192.168.0.139'
 IP_CL = None
 USER_CL = None
 PORT = 9090
@@ -576,7 +577,7 @@ def opt1(conn, addr):
 	back_button.grid(row=1, column=1,  padx=30, pady=30)
     
 	sub_meniu.mainloop()
- 
+  
 def copy_file(source_path, destination_path):
     private_key_path = get_private_key_path()
     if private_key_path is None:
@@ -592,7 +593,13 @@ def copy_file(source_path, destination_path):
     except subprocess.CalledProcessError as e:
         print(f"Error copying file: {e}")
         return None
-        
+    
+def get_username_by_ip(address):
+    for username, conn, addr in ACTIVE_CL:
+        if addr[0] == address[0]:
+            return username
+    return None
+
 def opt2(conn, addr):
 	def go_back():
 		submeniu.destroy()
@@ -601,12 +608,20 @@ def opt2(conn, addr):
 	def select_option():
 		chosen_option = options_box.get()
 		submeniu.destroy()
-		result = copy_file(chosen_option, "/home/student/project-2023/copied_files")
+		destf = f"/home/student/project-2023/copied_files/{username}" 
+		if not os.path.exists(destf):
+			os.makedirs(destf)
+			print(f"Folder '{destf}' created.")
+		else:
+			print(f"Folder '{destf}' already exists.")
+		result = copy_file(chosen_option, destf)
 		if result is not None:
 			good_job(conn, addr)
 		else:
 			try_again(conn, addr)
-	cmd = f"find . -type f"
+   
+	username = get_username_by_ip(addr)
+	cmd = f"find '/home/{username}' -type f"
 	output = execute_ssh_command(cmd)
 	options = output.split('\n')
 	submeniu = tk.Tk()
@@ -643,6 +658,106 @@ def opt2(conn, addr):
 	back_button.grid(row=1, column=1,  padx=30, pady=30)
 
 	submeniu.mainloop()
+ 
+def send_copy_file(source_path, destination_path):
+    private_key_path = get_private_key_path()
+    if private_key_path is None:
+        print("Private key path not found.")
+        return None
+    
+    dest_path = f"{destination_path}/{os.path.basename(source_path)}"
+    scp_command = f"scp -i {private_key_path} {source_path} {USER_CL}@{IP_CL}:{dest_path}"
+    try:
+        subprocess.check_call(scp_command, shell=True)
+        print("File copied successfully.")
+        return "Success"
+    except subprocess.CalledProcessError as e:
+        print(f"Error copying file: {e}")
+        return None
+
+def verify_and_create_folder(server_address, server_username, private_key_path, folder_path):
+    # Create an SSH client and load the private key
+    ssh = paramiko.SSHClient()
+    private_key = paramiko.RSAKey.from_private_key_file(private_key_path)
+    ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+    ssh.connect(server_address, username=server_username, pkey=private_key)
+
+    # Verify if the folder exists
+    command = f"test -d {folder_path} && echo 'Exists' || echo 'NotExists'"
+    stdin, stdout, stderr = ssh.exec_command(command)
+    result = stdout.read().decode().strip()
+
+    # Create the folder if it doesn't exist
+    if result == "NotExists":
+        create_command = f"mkdir -p {folder_path}"
+        ssh.exec_command(create_command)
+        print("Folder created successfully.")
+    else:
+        print("Folder already exists.")
+
+    # Close the SSH connection
+    ssh.close()
+
+def send_file(conn, addr):
+	def go_back():
+		submeniu.destroy()
+		menu(conn,addr)
+  
+	def select_option():
+		chosen_option = options_box.get()
+		submeniu.destroy()
+		username = get_username_by_ip(addr)
+		destf = f"/home/{username}/received_files" 
+		private_key_path = get_private_key_path()
+		verify_and_create_folder(addr[0], username, private_key_path, destf)
+		result = send_copy_file(chosen_option, destf)
+		if result is not None:
+			good_job(conn, addr)
+		else:
+			try_again(conn, addr)
+	cmd = f"find /home/student -type f"
+	output = subprocess.check_output(cmd, shell=True, stderr=subprocess.DEVNULL).decode()
+	options = output.split('\n')
+ 
+	#file_paths = [f for f in options if f.strip() != '']
+
+	#file_names = [os.path.basename(f) for f in file_paths]
+
+	submeniu = tk.Tk()
+	submeniu.title("Oprire Servicii")
+	submeniu.geometry("500x500")
+ 
+	image = Image.open("/home/student/project-2023/stitch-read.jpg")
+	image = image.resize((500, 500), Image.ANTIALIAS)
+	background_image = ImageTk.PhotoImage(image)
+
+	background_label = tk.Label(submeniu, image=background_image)
+	background_label.place(x=0, y=0, relwidth=1, relheight=1)
+
+	style = ttk.Style(submeniu)
+	style.configure("TFrame", background="#b3c6e7")
+	style.configure("TButton", background="#441f8a", foreground="#ffffff", font=("Arial", 12, "bold"))
+	style.configure("TLabel", background="#b3c8e7", foreground="#000000", font=("Arial", 12))
+	style.configure("TCombobox", background="#324ba9", foreground="#ffffff", font=("Arial", 12))
+
+	frame = ttk.Frame(submeniu, style = "TFrame")
+	frame.pack(padx=20, pady=20)
+    
+	label = ttk.Label(frame, text="Select an option:", style="TLabel")
+	label.grid(row=0, column=0, padx=10, pady=10)
+    
+	options_box = ttk.Combobox(frame, values=options, font=("Arial", 12), foreground="#2F2F4F", state="readonly", style = "TCombobox")
+	options_box.grid(row=0, column=1, padx=10, pady=10)
+	options_box.current(0)
+    
+	select_button = ttk.Button(frame, text="Select", command=select_option, style="TButton")
+	select_button.grid(row=1, column=0,  padx=30, pady=30)
+
+	back_button = ttk.Button(frame, text="Back", command=go_back, style="TButton")
+	back_button.grid(row=1, column=1,  padx=30, pady=30)
+
+	submeniu.mainloop()
+
 
 def opt3(conn, addr):
 	def go_back():
@@ -888,6 +1003,155 @@ def opt4(conn, addr):
 
 	explore_meniu.mainloop()
  
+def see_copied(conn, addr):
+	main_dir = "/home/student/project-2023/copied_files"
+	icon_path = "/home/student/project-2023/folder-icon.png"
+
+	def open_folder(conn, addr, path):
+		explore_meniu.destroy()
+		files_meniu = tk.Tk()
+		files_meniu.title("Fisiere copiate de la utilizatori")
+		files_meniu.geometry("500x500")
+
+		txt_images = []
+
+		# frame for labels
+		file_frame = tk.Frame(files_meniu)
+		file_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
+
+		# scrollbar
+		scrollbar = tk.Scrollbar(file_frame)
+		scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+
+		# canvas in file frame
+		canvas = tk.Canvas(file_frame, yscrollcommand=scrollbar.set)
+		canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+
+		scrollbar.config(command=canvas.yview)
+
+		# frame in canvas
+		file_inner_frame = tk.Frame(canvas)
+		canvas.create_window((0, 0), window=file_inner_frame, anchor=tk.NW)
+
+		def go_back_folder():
+			files_meniu.destroy()
+			see_copied(conn, addr)
+
+		def exit_prg():
+			files_meniu.destroy()
+			exit()
+
+		top_frame = tk.Frame(files_meniu)
+		top_frame.pack(pady=10)
+
+		back_button = tk.Button(top_frame, text="Back", command=go_back_folder)
+		back_button.pack(side=tk.LEFT, padx=10)
+
+		exit_button = tk.Button(top_frame, text="Exit", command=exit_prg)
+		exit_button.pack(side=tk.RIGHT, padx=10)
+
+		file_inner_frame.bind("<Configure>", lambda event: canvas.configure(scrollregion=canvas.bbox("all")))
+
+		row = 0
+		col = 0
+
+		for file_name in os.listdir(path):
+			file_path = os.path.join(path, file_name)
+			if os.path.isfile(file_path):
+				txt_icon = Image.open("/home/student/project-2023/txt_icon.png")
+				txt_icon = txt_icon.resize((50, 50), Image.ANTIALIAS)
+				txt_image = ImageTk.PhotoImage(txt_icon)
+				txt_images.append(txt_image)
+
+				label1 = tk.Label(file_inner_frame, image=txt_image)
+				label1.grid(row=row, column=col, padx=10, pady=10)
+
+				name_label1 = tk.Label(file_inner_frame, text=file_name)
+				name_label1.grid(row=row + 1, column=col)
+
+				label1.bind("<Button-1>", lambda event, path=file_path: open_file(conn, addr, path))
+
+				col += 1
+				if col == 5:
+					col = 0
+					row += 2
+
+		files_meniu.mainloop()
+    
+	explore_meniu = tk.Tk()
+	explore_meniu.title("Fisiere de monitorizare")
+	explore_meniu.geometry("500x500")
+    
+	dirs = []
+    
+    # frame for labels
+	dir_frame = tk.Frame(explore_meniu)
+	dir_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
+
+	# scrollbar
+	scrollbar = tk.Scrollbar(dir_frame)
+	scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+
+	# canvas in directory frame
+	canvas = tk.Canvas(dir_frame, yscrollcommand=scrollbar.set)
+	canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+
+	scrollbar.config(command=canvas.yview)
+
+	# frame in canvas
+	dir_inner_frame = tk.Frame(canvas)
+	canvas.create_window((0, 0), window=dir_inner_frame, anchor=tk.NW)
+
+	def go_back_menu():
+		explore_meniu.destroy()
+		menu(conn, addr)
+
+	def exit_prg():
+		explore_meniu.destroy()
+		exit()
+
+	top_frame = tk.Frame(explore_meniu)
+	top_frame.pack(pady=10)
+
+	back_button = tk.Button(top_frame, text="Back", command=go_back_menu)
+	back_button.pack(side=tk.LEFT, padx=10)
+
+	exit_button = tk.Button(top_frame, text="Exit", command=exit_prg)
+	exit_button.pack(side=tk.RIGHT, padx=10)
+
+	dir_inner_frame.bind("<Configure>", lambda event: canvas.configure(scrollregion=canvas.bbox("all")))
+
+	row = 0
+	col = 0
+
+	for dir in os.listdir(main_dir):
+		dir_path = os.path.join(main_dir, dir)
+		if os.path.isdir(dir_path):
+			folder_icon = Image.open(icon_path)
+			folder_icon = folder_icon.resize((50, 50), Image.ANTIALIAS)
+			folder_image = ImageTk.PhotoImage(folder_icon)
+			dirs.append(folder_image)
+
+			dir_frame = tk.Frame(dir_inner_frame)  # Create a separate frame for each directory
+			dir_frame.pack(side=tk.LEFT, padx=10, pady=10)
+
+			label = tk.Label(dir_frame, image=folder_image)
+			label.pack()
+
+			name_label = tk.Label(dir_frame, text=dir)
+			name_label.pack()
+
+			# Bind the event to the label or image instead of the frame
+			label.bind("<Button-1>", lambda event, path=dir_path: open_folder(conn, addr, path))
+			name_label.bind("<Button-1>", lambda event, path=dir_path: open_folder(conn, addr, path))
+
+			col += 1
+			if col == 5:
+				col = 0
+				row += 1
+
+	explore_meniu.mainloop()
+ 
 
 def opt5(conn, addr):
 	def go_back():
@@ -963,6 +1227,160 @@ def opt5(conn, addr):
 	back_button.grid(row=1, column=1,  padx=30, pady=30)
 
 	submeniu.mainloop()
+ 
+def open_ssh_file(conn, addr, path):
+    # Retrieve file content using SSH
+    file_content = execute_ssh_command(f"cat {path}")
+
+    if file_content is None:
+        print("Error retrieving file content.")
+        return
+
+    content_scr = tk.Tk()
+    content_scr.title(path)
+    content_scr.geometry("900x500")
+
+    # Create a frame for the scrollbar and text area
+    scroll_frame = tk.Frame(content_scr)
+    scroll_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
+
+    # Create a scrollbar
+    scrollbar = tk.Scrollbar(scroll_frame)
+    scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+
+    # Create a text area
+    text_area = tk.Text(scroll_frame, yscrollcommand=scrollbar.set)
+    text_area.insert(tk.END, file_content)
+    text_area.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+
+    # Configure the scrollbar to work with the text area
+    scrollbar.config(command=text_area.yview)
+
+    content_scr.mainloop()
+    
+def display(conn, addr):
+	username = get_username_by_ip(addr)
+	main_dir = f"/home/{username}"
+	icon_path = "/home/student/project-2023/folder-icon.png"
+	txt_icon = "/home/student/project-2023/txt_icon.png"
+ 
+	def open_ssh_folder(conn, addr, main_dir, username, icon_path, txt_icon):
+		explore_menu = tk.Tk()
+		explore_menu.title("Files and Folders")
+		explore_menu.geometry("1500x500")
+
+		def go_back_folder():
+			explore_menu.destroy()
+			menu(conn, addr) 
+
+		def exit_program():
+			explore_menu.destroy()
+			exit()
+
+		top_frame = tk.Frame(explore_menu)
+		top_frame.pack(pady=10)
+
+		back_button = tk.Button(top_frame, text="Back", command=go_back_folder)
+		back_button.pack(side=tk.LEFT, padx=10)
+
+		exit_button = tk.Button(top_frame, text="Exit", command=exit_program)
+		exit_button.pack(side=tk.RIGHT, padx=10)
+
+		# Frame for labels
+		frame = tk.Frame(explore_menu)
+		frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
+
+		# Scrollbar
+		scrollbar = tk.Scrollbar(frame)
+		scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+
+		# Canvas in frame
+		canvas = tk.Canvas(frame, yscrollcommand=scrollbar.set)
+		canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+
+		scrollbar.config(command=canvas.yview)
+
+		# Frame in canvas
+		inner_frame = tk.Frame(canvas)
+		canvas.create_window((0, 0), window=inner_frame, anchor=tk.NW)
+
+		inner_frame.bind("<Configure>", lambda event: canvas.configure(scrollregion=canvas.bbox("all")))
+
+		def open_ssh_folder_recursive(folder_path):
+      
+			for widget in inner_frame.winfo_children():
+				widget.destroy()
+        
+			folder_cmd = f"find '{folder_path}' -mindepth 1 -maxdepth 1 -type d"
+			file_cmd = f"find '{folder_path}' -mindepth 1 -maxdepth 1 -type f"
+
+			folders = execute_ssh_command(folder_cmd)
+			files = execute_ssh_command(file_cmd)
+
+			if folders is None or files is None:
+				print("Error retrieving folders and files.")
+				return
+
+			folder_list = folders.split('\n')
+			file_list = files.split('\n')
+
+			row = 0
+			col = 0
+	
+			for folder_name in folder_list:
+				if folder_name:
+					folder_path = os.path.join(folder_path, folder_name)
+					folder_frame = tk.Frame(inner_frame)
+					folder_frame.grid(row=row, column=col, padx=10, pady=10)
+
+					folder_icon = Image.open(icon_path)
+					folder_icon = folder_icon.resize((50, 50), Image.ANTIALIAS)
+					folder_image = ImageTk.PhotoImage(folder_icon)
+
+					folder_label = tk.Label(folder_frame, image=folder_image)
+					folder_label.image = folder_image
+					folder_label.pack()
+
+					folder_name_label = tk.Label(folder_frame, text=folder_name)
+					folder_name_label.pack()
+
+					folder_label.bind("<Button-1>", lambda event, path=folder_path: open_ssh_folder_recursive(path))
+					folder_name_label.bind("<Button-1>", lambda event, path=folder_path: open_ssh_folder_recursive(path))
+
+					col += 1
+					if col == 5:
+						col = 0
+						row += 1
+
+			for file_name in file_list:
+				if file_name:
+					file_path = os.path.join(folder_path, file_name)
+					txt_icon1 = Image.open(txt_icon)
+					txt_icon1 = txt_icon1.resize((50, 50), Image.ANTIALIAS)
+					txt_image = ImageTk.PhotoImage(txt_icon1)
+
+					file_label = tk.Label(inner_frame, image=txt_image)
+					file_label.grid(row=row, column=col, padx=10, pady=10)
+
+					file_name_label = tk.Label(inner_frame, text=file_name)
+					file_name_label.grid(row=row + 1, column=col)
+
+					# Keep a reference to the image object
+					file_label.image = txt_image
+
+					file_label.bind("<Button-1>", lambda event, path=file_path: open_ssh_file(conn, addr, path))
+
+					col += 1
+					if col == 5:
+						col = 0
+						row += 2
+
+			row = 0
+
+		open_ssh_folder_recursive(main_dir)
+		explore_menu.mainloop()
+	open_ssh_folder(conn, addr, main_dir, username, icon_path, txt_icon)
+ 
 def menu(conn, addr):
     def go_back_to_selection():
         meniu.destroy()
@@ -975,21 +1393,30 @@ def menu(conn, addr):
             opt1(conn, addr)
         elif chosen_option == "Copiere fisiere":
             opt2(conn, addr)
+        elif chosen_option == "Trimitere fisiere":
+            send_file(conn, addr)
         elif chosen_option == "Instalare aplicatii/servicii":
             opt3(conn, addr)
         elif chosen_option == "See monitoring files":
             opt4(conn, addr)
+        elif chosen_option == "See copied files":
+            see_copied(conn,addr)
         elif chosen_option == "Updates":
             opt5(conn, addr)
+        elif chosen_option == "Display client's workspace":
+            display(conn, addr)
         elif chosen_option == "Exit":
             exit()
 
     options = [
         "Oprire/pornire servicii/procese",
         "Copiere fisiere",
+        "Trimitere fisiere",
         "Instalare aplicatii/servicii",
         "See monitoring files",
+        "See copied files",
         "Updates",
+        "Display client's workspace",
         "Exit"
     ]
     
@@ -1124,7 +1551,7 @@ def main():
         os.chdir(folder_name)
         reset_files()
         
-        with open("info-shh.txt", "w") as file:
+        with open("info-shh.txt", "a") as file:
             file.write(f"{username} {client_ip}")
         
         user = subprocess.check_output("whoami").decode().strip()

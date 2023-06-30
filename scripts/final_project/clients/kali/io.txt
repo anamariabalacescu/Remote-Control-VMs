@@ -1,10 +1,10 @@
-Data: 2023-06-29 20:44:24.810815
+Data: 2023-06-30 12:42:51.534358
 kali's info:
-Linux 6.0.0-kali3-amd64 (kali) 	06/29/23 	_x86_64_	(2 CPU)
+Linux 6.0.0-kali3-amd64 (kali) 	06/30/23 	_x86_64_	(2 CPU)
 
 avg-cpu:  %user   %nice %system %iowait  %steal   %idle
-           2.16    0.00    1.74    0.15    0.00   95.95
+           1.44    0.00    0.91    0.07    0.00   97.58
 
 Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
-sda              12.17       339.60       193.80         0.00    1381083     788157          0
-sr0               0.01         0.03         0.00         0.00        114          0          0
+sda               6.70       114.59        46.68         0.00    1949066     794034          0
+sr0               0.00         0.02         0.00         0.00        334          0          0

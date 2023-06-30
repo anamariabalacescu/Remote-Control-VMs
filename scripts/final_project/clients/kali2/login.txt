@@ -1,4 +1,4 @@
-Data: 2023-06-29 20:48:09.560293
+Data: 2023-06-30 11:19:26.787552
 kali2's info:
 Username         Port     From                                       Latest
 root                                                                **Never logged in**

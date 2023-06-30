@@ -1,4 +1,4 @@
-Data: 2023-06-29 20:48:09.801513
+Data: 2023-06-30 11:19:27.017549
 kali2's info:
 Hint: You are currently not seeing messages from other users and the system.
       Users in groups 'adm', 'systemd-journal' can see all messages.

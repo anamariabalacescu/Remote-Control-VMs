@@ -1,8 +1,9 @@
 import socket
 import subprocess
 import os
+import sys
 
-IP = '192.168.1.135'
+IP = '192.168.0.139'
 PORT = 9090
 ADDR = (IP, PORT)
 SIZE = 1024
@@ -43,6 +44,8 @@ def main():
 
 	print("Done receiving")
 
+	sys.exit(0)
+
 	connected = True
 	while connected:
 		msg = input("> ")
@@ -55,4 +58,3 @@ def main():
 	
 if __name__ == "__main__":
 	main()	
-

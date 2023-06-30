@@ -150,6 +150,15 @@ Day 10:
 web:
 https://stackoverflow.com/questions/20399243/display-message-when-hovering-over-something-with-mouse-cursor-in-python
 
+
+Day 11:
+
+- added posibility of sending files to client
+- added posibility of seeing clients workspace through graphical interface
+- added posibility of seeing copied files
+- added stopping connection fucntion in the client code to permit other clients but not restrict monitoring.
+- fixed minor bugs
+
 Commands-found (Day1-8):
 lshw -short //lista comp hw
 systemctl list-units --type=service --state=running //vizualizare servicii active
